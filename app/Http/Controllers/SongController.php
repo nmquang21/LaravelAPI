@@ -14,5 +14,6 @@ class SongController extends Controller
     function uploadFreeSong(Request $request){
         $song = new Song($request->all());
         $song->save();
+        return $song;
     }
 }
