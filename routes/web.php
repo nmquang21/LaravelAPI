@@ -27,3 +27,4 @@ Route::get('/upload',function (){
 });
 Route::get('/list-free-song','SongController@getFreeSong');
 Route::post('/upload-free-song','SongController@uploadFreeSong');
+Route::resource('song','SongController1');
